@@ -45,6 +45,9 @@
     h2 {
       color: #ffcc66;
     }
+    h4 {
+      margin-top: 1.5rem;
+    }
     ul {
       padding-left: 1.5rem;
     }
@@ -72,6 +75,22 @@
       border-left: 4px solid #444;
       font-style: italic;
       color: #ccc;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      background-color: #222;
+      color: #eee;
+      border: 1px solid #444;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background: #66baff;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
     }
     footer {
       color: #888;
@@ -102,23 +121,11 @@
     </section>
 
     <section>
-      <h2>🎞️ Formats I Convert</h2>
-      <ul>
-        <li>VHS</li>
-        <li>VHS-C</li>
-        <li>Hi8 / Digital8</li>
-        <li>MiniDV</li>
-      </ul>
-    </section>
-
-    <section>
       <h2>💵 Pricing</h2>
       <p>I don’t believe in upsells or cutting corners. Every tape you give me gets full premium treatment—high-quality conversion, basic editing, and long-term usability. Compare that to online services that charge more for less.</p>
-    
       <table>
         <tr><th>Service</th><th>Price</th></tr>
-        <tr><td><strong>All-inclusive video tape conversion</strong><br>
-          (VHS, VHS-C, Hi8, Digital8, MiniDV)</td><td><strong>$20 per tape</strong></td></tr>
+        <tr><td><strong>All-inclusive video tape conversion</strong><br>(VHS, VHS-C, Hi8, Digital8, MiniDV)</td><td><strong>$20 per tape</strong></td></tr>
         <tr><td>Includes:</td><td>
           • High-quality MP4 video<br>
           • Cropping & trimming<br>
@@ -132,24 +139,34 @@
         <tr><td>Mail-in option</td><td>Customer covers shipping</td></tr>
         <tr><td>Payment accepted</td><td>Venmo, PayPal, or cash</td></tr>
       </table>
-    
-      <p>You’ll receive high-quality digital files that are ready to watch, share, and store forever—no confusing file types or compression issues. I personally handle every tape with care.</p>
-    </section>
-    
-
-    <section>
-      <h2>📍 Pickup & Delivery</h2>
-      <p>I offer personal pickup between Santa Cruz and Aptos (most afternoons after 3 PM), or you can mail your tapes.</p>
     </section>
 
     <section>
-      <h2>⏱️ Turnaround</h2>
-      <p>Most projects completed in 1–2 weeks.</p>
+      <h2>🎞️ Formats I Convert</h2>
+      <ul>
+        <li>VHS</li>
+        <li>VHS-C</li>
+        <li>Hi8 / Digital8</li>
+        <li>MiniDV</li>
+      </ul>
     </section>
 
     <section>
-      <h2>🧾 Payment</h2>
-      <p>50% upfront, 50% at delivery. Venmo, PayPal, or cash accepted.</p>
+      <h2>❓ Frequently Asked Questions</h2>
+      <h4>How do I get my tapes to you?</h4>
+      <p>I offer personal pickup between Santa Cruz and Aptos (most afternoons after 3 PM), or you can mail them to me. I’ll coordinate based on what’s easiest for you.</p>
+
+      <h4>How long does the conversion take?</h4>
+      <p>Most projects are completed within 1–2 weeks. Large projects may take a little longer, but I’ll always keep you updated.</p>
+
+      <h4>What format do I get the videos in?</h4>
+      <p>Each tape is converted to an MP4 file—playable on any computer, phone, or smart TV. I can deliver them on a USB drive or via digital download.</p>
+
+      <h4>Do you offer editing or organizing?</h4>
+      <p>Basic editing (cropping, color/exposure cleanup) is included. If you want clips organized, labeled, or sequenced, I can help with that too.</p>
+
+      <h4>What kinds of tapes do you convert?</h4>
+      <p>VHS, VHS-C, Hi8, Digital8, MiniDV—if you’re unsure, just ask. I can probably convert it.</p>
     </section>
 
     <section>
@@ -160,9 +177,19 @@
     </section>
 
     <section>
-      <h2>📩 Contact</h2>
-      <p>Email: <a href="mailto:johnkyle4@gmail.com">johnkyle4@gmail.com</a><br>
-         Phone: <a href="tel:+12076136674">(207) 613-6674</a></p>
+      <h2>📬 Contact Form</h2>
+      <form action="https://formspree.io/f/xzzeyzbj" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="_replyto" id="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" rows="6" required></textarea><br>
+
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 
